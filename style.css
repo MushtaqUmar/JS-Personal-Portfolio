@@ -599,7 +599,8 @@ span {
 .skill-box .box div .github,
 .skill-box .box div .chatgpt,
 .skill-box .box div .gemini,
-.skill-box .box div .copilot{
+.skill-box .box div .copilot,
+.skill-box .box div .jupyter{
   width: 70px;
   height: 60px;
   border-radius: 10px;
