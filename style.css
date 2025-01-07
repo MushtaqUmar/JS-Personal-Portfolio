@@ -453,7 +453,7 @@ span {
 }
 
 .about #fullParagraph.expanded {
-  max-height:250px; /* Adjust this value based on the content's height */
+  max-height:280px; /* Adjust this value based on the content's height */
 }
 
 /* ---------------------------------- Projects Section ------------------------  */
@@ -484,7 +484,7 @@ span {
 .project-box {
   background-color: var(--main-color);
   color: var(--bg-color); /* black */
-  height: 280px;
+  height: 290px;
   border-radius: 3rem;
   cursor: pointer;
 
