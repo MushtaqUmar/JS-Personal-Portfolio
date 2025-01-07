@@ -453,7 +453,7 @@ span {
 }
 
 .about #fullParagraph.expanded {
-  max-height:200px; /* Adjust this value based on the content's height */
+  max-height:250px; /* Adjust this value based on the content's height */
 }
 
 /* ---------------------------------- Projects Section ------------------------  */
@@ -476,7 +476,7 @@ span {
 .projects-container {
   /* using the grid system  */
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
@@ -484,7 +484,7 @@ span {
 .project-box {
   background-color: var(--main-color);
   color: var(--bg-color); /* black */
-  height: 300px;
+  height: 280px;
   border-radius: 3rem;
   cursor: pointer;
 
@@ -596,7 +596,10 @@ span {
 .skill-box .box div .excel,
 .skill-box .box div .powerbi,
 .skill-box .box div .python,
-.skill-box .box div .github{
+.skill-box .box div .github,
+.skill-box .box div .chatgpt,
+.skill-box .box div .gemini,
+.skill-box .box div .copilot{
   width: 70px;
   height: 60px;
   border-radius: 10px;
