@@ -453,7 +453,7 @@ span {
 }
 
 .about #fullParagraph.expanded {
-  max-height:280px; /* Adjust this value based on the content's height */
+  max-height:305px; /* Adjust this value based on the content's height */
 }
 
 /* ---------------------------------- Projects Section ------------------------  */
