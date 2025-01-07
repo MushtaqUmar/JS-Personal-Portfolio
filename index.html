@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://cdn.jsdelivr.net;">
+
+    <title>Umar's Portfolio</title>
+    <!-- attach css file  -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Link BoxIcons CSS:  Boxicons is a free collection of carefully crafted open source icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- goto:- (Box icons website > Usage(top right corner) > Usage as a Font > Copy link -> Paste here)-->
+    <!-- This will load boxicons font into your webpage   ) -->
+
+
+    
+  </head>
+
+  <body>
+    <!-- --------------------------------------------- Header Section ------------------------------------  -->
+    <div class="header">
+      <!-- logo  -->
+      <a href="#home" class="logo">
+        <!-- ^^ :- bookmark -->
+        Umar <span>Mushtaq</span>
+      </a>
+      <!-- Icon copied from Boxicons - 'menu icon' : use for smaller screens like tablets and less dimensions -->
+      <i class="bx bx-menu menu-icon" id="menu-icon"></i>
+      <!--Open navbar-->
+      <i class="bx bx-x cross-icon"></i>
+      <!-- Close navbar -->
+
+      <!-- a prefix 'bx'- for regular icons, bxs- for solid icons & bxl- for logos followed by the icon name and seperate class with the bx:  -->
+      <!-- navbar  -->
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <!-- '#home' : bookmark-->
+        <a href="#about">About</a>
+        <!-- href="#about" :- Bookmark to About section defined below with id = 'about'-->
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <!-- ---------------------------- Sections  (home, about , project,contact etc ) seperately  -->
+
+    <!-- -------------- 1. Home section -----------------  -->
+    <section class="home" id="home">
+      <div class="home-img">
+        <img src="./images/img2.jpg" alt="Img" />
+      </div>
+
+      <div class="home-content">
+        <h1>It's <span>Umar</span></h1>
+        <h3 class="text-animation">
+          I'm a <span></span>
+          <!-- <span> content is added in CSS ( using class .text-animation css)-->
+        </h3>
+        <!-- Someting as web developer -->
+        <p>
+          I like to build solid and scalable web products with good user
+          experiences.
+        </p>
+        <p>
+          Additionally, I can assist data analysts in analyzing data to help
+          organizations make informed decisions.
+        </p>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/hereumar/">
+          <i class="bx bxl-linkedin-square"></i>
+        </a>
+        <!-- LinkedIn : icon copied from boxicons (linkedIn-Square icon)-->
+        <a href="https://www.instagram.com/khattab_59/?__pwa=1"
+          ><i class="bx bxl-instagram-alt"></i
+        ></a>
+        <!-- Instagram-->
+        <a href="https://github.com/MushtaqUmar"
+          ><i class="bx bxl-gitlab"></i></a
+        ><!-- github -->
+      </div>
+
+      <a href="mailto:umarofficial073@gmail.com" class="btn">Hire Me</a>
+    </section>
+    <!-- End 'home' section -->
+
+    <!-- ------------------------------------------------- 2. About Section ------------------------------------  -->
+    <section class="about" id="about">
+      <!-- id for bookmark (navbar) -->
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+
+        <h3 class="text-animation">
+          <span></span>
+          <!-- added in css : Same as added in above Home section .text-animation-->
+        </h3>
+
+        <p>
+          "I'm Umar, a frontend web developer dedicated to crafting exceptional
+          digital experiences. With a solid foundation in HTML, CSS, and
+          JavaScript, I have further honed my skills by working with libraries
+          like React and the Bootstrap framework. Currently pursuing a BTech in
+          Computer Science and Engineering, I am passionate about technology,
+          design, and enhancing user experiences. Additionally, I have
+          strengthened my problem-solving abilities by tackling data structures
+          and algorithms challenges on platforms like LeetCode, utilizing Java
+          programming language. Outside of coding, I enjoy playing cricket,
+          staying updated on tech trends, and exploring new places, always
+          striving to grow personally and professionally."
+        </p>
+
+        <p id="fullParagraph">
+          Moreover, I have developed expertise in data analytics by working on
+          real-world projects using technologies such as MySQL, MS Excel, MS
+          Power BI, and Python, along with its libraries like Pandas, NumPy, and
+          Matplotlib.
+        </p>
+        <a class="btn" id="readMoreButton">Read More</a>
+        <!-- Javascript-->
+      </div>
+
+      <div class="about-img">
+        <img src="./images/img2.jpg" alt="img" />
+      </div>
+    </section>
+    <!-- End about section -->
+
+    <!-- --------------------------------------------------3. Projects Section ----------------------------  -->
+    <section class="projects" id="projects">
+      <h2 class="heading">Projects</h2>
+
+      <div class="projects-container">
+        <!-- project 1 -->
+        <div class="project-box">
+          <div class="project-info">
+            <h4>Currency Converter</h4>
+            <p>
+              A dynamic currency converter using HTML, CSS, and JavaScript,
+              leveraging an API to provide real-time exchange rates.
+            </p>
+            <a href="https://mushtaqumar.github.io/JS-Currency-Converter/">Click to see</a>
+          </div>
+        </div>
+        <!-- project 2 -->
+        <div class="project-box">
+          <div class="project-info">
+            <h4>Tic Tac Toe</h4>
+            <p>
+              Interactive Tic Tac Toe game implemented with HTML, CSS, and
+              JavaScript for a fun and engaging user experience.
+            </p>
+            <a href="https://mushtaqumar.github.io/Tic-Tac-Toe/">Click to see</a>
+          </div>
+        </div>
+        <!-- project 3 -->
+        <div class="project-box">
+          <div class="project-info">
+            <h4>Amazon Clone</h4>
+            <p>
+              Replica of Amazon.in website created with HTML and CSS, showcasing
+              product listings and a user-friendly interface
+            </p>
+            <a href="https://mushtaqumar.github.io/Amazon-Clone/">Click to see</a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-box">
+          <div class="project-info">
+            <h4>Calculator</h4>
+            <p>
+              Functional calculator application built with HTML, CSS, and
+              JavaScript for basic arithmetic operations.
+            </p>
+            <a href="https://mushtaqumar.github.io/JS-Calculator/">Click to see</a>
+          </div>
+        </div>
+        <!-- project 5 -->
+        <div class="project-box">
+          <div class="project-info">
+            <h4>Company Sales Analysis</h4>
+            <p>
+              Used MS Power BI and SQL to analyze chocolate company sales,
+              identify KPIs, and suggest strategies for a 5% sales boost.
+            </p>
+            <a href="https://github.com/MushtaqUmar/Chocolate-Company-Sales-Report-BI">Click to see</a>
+          </div>
+        </div>
+
+        <!-- project 6 -->
+        <div class="project-box">
+          <div class="project-info">
+            <h4>MGH Hospital Analysis</h4>
+            <p>
+              Analyzed MGH patient data to optimize resources and improve care through trend and pattern insights."
+            </p>
+            <a href="https://mavenanalytics.io/project/17456">Click to see</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End project section -->
+
+    <!-- ---------------------------------------- 4. Skills Section ----------------------------  -->
+    <section class="skills" id="skills">
+      <h2 class="heading">Skills & <span>Experties</span></h2>
+
+      <div class="skill-box">
+        <!-- java  -->
+        <div class="box">
+          <div>
+            <img src="./images/java.png" alt="Java" />
+          </div>
+          <p>Java</p>
+        </div>
+        <!-- Html  -->
+        <div class="box">
+          <div>
+            <img src="./images/html.png" alt="HTML" />
+          </div>
+          <p>Html</p>
+        </div>
+        <!-- css  -->
+        <div class="box">
+          <div>
+            <img src="./images/css.png" alt="CSS" />
+          </div>
+          <p>CSS</p>
+        </div>
+        <!-- JavaScript -->
+        <div class="box">
+          <div>
+            <img src="./images/javascript.png" alt="JavaScript" />
+          </div>
+          <p>JavaScript</p>
+        </div>
+        <!-- Bootstrap  -->
+        <div class="box">
+          <div>
+            <img src="./images/bootstrap.png" alt="Bootstrap" />
+          </div>
+          <p>Bootstrap5</p>
+        </div>
+        <!-- MySQL  -->
+        <div class="box">
+          <div>
+            <img src="./images/MySQL.png" alt="MySQL" class="mysql"/>
+          </div>
+          <p>MySQL</p>
+        </div>
+        <!-- MS Excel  -->
+        <div class="box">
+          <div>
+            <img src="./images/Excel.jpg" alt="MS Excel" class="excel" />
+          </div>
+          <p>MS Excel</p>
+        </div>
+        <!-- Power BI  -->
+        <div class="box">
+          <div>
+            <img src="./images/powerbi.jpg" alt="Power BI" class="powerbi" />
+          </div>
+          <p>Power BI</p>
+        </div>
+        <!-- Python -->
+        <div class="box">
+          <div>
+            <img src="./images/python.jpg" alt="Python" class="python"/>
+          </div>
+          <p>Python</p>
+        </div>
+        <!-- Git/Github -->
+        <div class="box">
+          <div>
+            <img src="./images/github.png" alt="Python" class="github"/>
+          </div>
+          <p>Python</p>
+        </div>
+      
+      </div>
+
+    </section>
+    <!-- End skill section -->
+
+    <!-- -------------------------------------- 5. Contact Section ----------------------------------  -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form>
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" id="full_name" required />
+          <input type="email" placeholder="email" id="email" required/>
+        </div>
+
+        <div class="input-box">
+          <input type="tel" placeholder="phone number" id="phone_number" maxlength="15"/>
+          <input type="text" placeholder="subject" id="subject" required/>
+        </div>
+
+        <!--a multi-line text input field for users to enter text.-->
+        <textarea name="User Message..." cols="30" rows="10" placeholder="Your Message" id="message" required></textarea>
+        <!-- submit button  -->
+        <input type="submit" value="Send Message" class="btn"/>
+      </form>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- -------------------------------------------- Footer Section ----------------------------------  -->
+    <footer class="footer">
+      <h2 class="heading">Let's <span>Connect</span></h2>
+      <div class="social">
+        <!--same as above: home section -->
+        <a href="https://www.linkedin.com/in/hereumar/"> <i class="bx bxl-linkedin-square"></i> </a>
+        <!-- LinkedIn : icon copied from boxicons (linkedIn-Square icon)-->
+        <a href="https://www.instagram.com/khattab_59/?__pwa=1"><i class="bx bxl-instagram-alt"></i></a>
+        <!-- Instagram-->
+        <a href="#https://github.com/MushtaqUmar"><i class="bx bxl-gitlab"></i></a
+        ><!-- github -->
+      </div>
+    </footer>
+
+
+
+    <!-- In order to get started using EmailJS on your website just paste the following code snippet before closing tag, with the correct public key: -->
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    
+
+    <!-- Attach js file  -->
+    <script src="./script.js"></script>
+   
+    
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
