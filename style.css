@@ -649,7 +649,7 @@ span {
   border: 2px solid var(--main-color);
   border-radius: 0.8rem;
   margin: 1rem 0;
-  resize: none; /* to prevent users from resizing an element, typically a textarea(Provides by default resize:both (Horizontal , vertical handle) resizing on screen */
+  resize: none; /* to prevent users from resizing an element, typically a textarea(Provides by default resize:both (Horizontal handle, vertical handle) resizing on screen */
 }
 
 .contact form .btn {

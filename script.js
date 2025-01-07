@@ -89,6 +89,7 @@ To send a message to your email when a user submits the form, you can use an ema
     .then((response) =>{
         console.log('Success!', response);  // For ourself to check on console
         alert('Message sent successfully!');  // for user 
+        form.reset(); // once form sent , clear for next
       }).catch((error) => {
         console.log('Failed...', error);
         alert('Something went wrong, please try again.');
