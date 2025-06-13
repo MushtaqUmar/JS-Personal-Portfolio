@@ -203,7 +203,7 @@ span {
 
 .text-animation span::before {
   /* pseudo-elements in CSS that are used to add content before the actual content of an element*/
-  content: "Web Developer ...";
+  content: "Data Analyst...";
   color: var(--main-color);
   animation: words 20s infinite;
   /* words: animation defined below - @keyframe */
@@ -245,22 +245,22 @@ span {
 @keyframes words {  /* Its duration is defined as 20s , so each take will take 5s */
   0%,
   25% {
-    content: "Web Developer...";
+    content: "Data Analyst...";
   }
 
   26%,
   50% {
-    content: "Data Analyst...";
+    content: "Business Stretegist...";
   }
 
   51%,
   75% {
-    content: "Tech Enthusiast...";
+    content: "AI Enthusiast...";
   }
 
   76%,
   100% {
-    content: "Problem Solver...";
+    content: "Data Analyst...";
   }
 
 }
@@ -398,7 +398,7 @@ span {
 
 .about-content .text-animation span::before {
   /* pseudo-elements in CSS that are used to add content before  the actual content of an element*/
-  content: "Web Developer ...";
+  content: "Data Analyst...";
   color: var(--main-color);
   animation: words 20s infinite;
   /* words: anination defined below - @keyframe */
@@ -463,13 +463,13 @@ span {
 }
 
 .projects h2 {
-  margin-bottom: 5rem;   
+  margin-bottom: 4rem;   
   color: var(--text-color);
 }
 .projects .heading { /* Actually above h2 tag : We can do this in above block as well */
   /* same as 'About Me' */
   text-align: center;
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 /* .projects-Container */
@@ -508,13 +508,13 @@ span {
 }
 
 .project-info h4 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
 .project-info p {
-  font-size: 1.6rem;
+  font-size: 1.45rem;
   font-weight: 400;
   margin: auto;
   max-height: 120px;
@@ -522,7 +522,7 @@ span {
 
 .project-info a {
   margin-top: 1rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 600;
   text-decoration: none;
   color: black;
