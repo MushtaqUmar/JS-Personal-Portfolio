@@ -250,7 +250,7 @@ span {
 
   26%,
   50% {
-    content: "Business Stretegist...";
+    content: "Business Strategist...";
   }
 
   51%,
@@ -456,32 +456,43 @@ span {
   max-height:500px; /* Adjust this value based on the content's height */
 }
 
-/* ---------------------------------- Projects Section ------------------------  */
-.projects {
+/* ---------------------------------- Projects Section & Job_Simulations Section & Certifications Section------------------------  */
+.projects, .Job_Simulations, .certifications {
   background-color: var(--second-bg-color);
   color: var(--text-color);
 }
 
-.projects h2 {
+.projects h2, .Job_Simulations h2, .certifications h2{
   margin-bottom: 4rem;   
   color: var(--text-color);
 }
-.projects .heading { /* Actually above h2 tag : We can do this in above block as well */
+
+.projects .heading, .Job_Simulations .heading, .certifications .heading { /* Actually above h2 tag : We can do this in above block as well */
   /* same as 'About Me' */
   text-align: center;
   font-size: 5rem;
 }
 
 /* .projects-Container */
-.projects-container {
+.projects-container, .cert-container {
   /* using the grid system  */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2.5rem;
 }
+
+/* .JS-Container */
+.JS-container {
+  /* using the grid system  */
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  gap: 2.5rem;
+}
+
 /* container boxes  */
-.project-box {
+.project-box, .JS-box, .cert-box {
   background-color: var(--main-color);
   color: var(--bg-color); /* black */
   height: 290px;
@@ -491,13 +502,13 @@ span {
   transition: all 0.3s ease-in-out;
   padding-top: 10px;
 }
-.project-box:hover {
+.project-box:hover, .JS-box:hover, .cert-box:hover {
   background-color: #fff;
   color: var(--main-color);
   transform: scale(1.03);
 }
 /* info of boxes */
-.project-box .project-info {
+.project-box .project-info, .JS-box .JS-info, .cert-box .cert-info {
   display: flex;
   flex-direction: column;
   align-items: baseline; /* cross-axis adjust (x-axis this time) */
@@ -507,20 +518,24 @@ span {
   max-height: 250px;  /* Its parent has given 300px height above */
 }
 
-.project-info h4 {
+.project-info h4, .JS-info h4, .cert-info h4 {
   font-size: 2.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
 
-.project-info p {
+.project-info p, .cert-info p {
   font-size: 1.45rem;
   font-weight: 400;
   margin: auto;
   max-height: 120px;
 }
-
-.project-info a {
+.JS-info p {
+  font-size: 1.45rem;
+  font-weight: 400;
+  max-height: 120px;
+}
+.project-info a, .JS-info a, .cert-info a {
   margin-top: 1rem;
   font-size: 1.7rem;
   font-weight: 600;
@@ -745,9 +760,14 @@ span {
   html {
     font-size: 55%;
   }
-  .projects-container {
+  .projects-container, .cert-container {
     padding-bottom: 7rem;
     grid-template-columns: repeat(2, 1fr);
+    /* margin: 0 5rem; */
+  }
+  .JS-container {
+    padding-bottom: 7rem;
+    grid-template-columns: repeat(1, 1fr);
     /* margin: 0 5rem; */
   }
 }
@@ -835,13 +855,38 @@ span {
     margin-bottom: -2rem;
   }
 
-  .projects h2 {
+  .projects h2, .Job_Simulations h2, .certifications h2 {
     margin-bottom: 3rem;
     margin-top: -1rem;
   }
-  .projects-container {
+  .projects-container , .JS-container, .cert-container{
     grid-template-columns: repeat(1, 1fr);
   }
 
 }
 
+
+
+/* ========== For Job Simulations ========== */
+@media (max-width: 430px) {
+  .project-info h4, .JS-info h4 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+
+.JS-info p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  max-height: 120px;
+}
+.JS-info a {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+}
+
+}
